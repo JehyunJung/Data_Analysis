@@ -16,6 +16,7 @@ def text_cleaning(text):
     hangul = re.compile('[^ ㄱ-ㅣ가-힣]+') # 한글의 정규표현식을 나타냅니다.
     result = hangul.sub('', text)
     return result
+
 def main():
     # 크롤링할 사이트 주소를 정의합니다.
     source_url = "https://namu.wiki/RecentChanges"
